@@ -3,9 +3,16 @@
 #include <fstream>
 #include <string>
 
-void FileIO() {};
+FileIO::FileIO()
+{
+}
+FileIO::~FileIO()
+{
+}
+
 int FileIO::WriteInFile(std::string fileName, std::string text)
 {
+	setlocale(LC_ALL, "Russian");
 	std::ofstream out;
 	//std::ofstream out(fileName, out.binary | out.out);
 	out.open(fileName);
@@ -28,7 +35,7 @@ std::string FileIO::ReadFromFile(std::string fileName) {
 			outMess += strLine;
 			outMess += "\n";
 		in.close();
-		return "";
+		return outMess;
 	}
 	in.close();
 	return "";

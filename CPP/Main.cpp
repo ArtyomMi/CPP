@@ -14,6 +14,7 @@
 
 int main()
 {
+	setlocale(LC_ALL, "Russian");
 	//Shooter i;
 	//std::cout << i.shooter();
 
@@ -33,8 +34,8 @@ int main()
 
 	//File Input/Output
 	FileIO file;
-	file.WriteInFile("testFile.txt", "Test321");
-	//std::cout << file.ReadFromFile("testFile");
+	file.WriteInFile("testFile.txt", "Test222");
+	std::cout << file.ReadFromFile("testFile.txt");
 
 
 }
