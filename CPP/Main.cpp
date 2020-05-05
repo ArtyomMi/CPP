@@ -4,7 +4,7 @@
 #include <windows.h>
 #include "FileIO.h"
 #include "Shooter.h"
-
+#include "ReturnByLink.h"
 
 
 
@@ -20,22 +20,23 @@ int main()
 
 
 	/*double a, b, c, p1, p2;
-	std::cout << "Enter a, b and c:" << std::endl;
+	std::cout << "enter a, b and c:" << std::endl;
 	std::cin >> a; std::cin >> b; std::cin >> c;
-	int res = root::MyRoot(a, b, c, p1, p2);
+	ReturnByLink r;
+	int res = r.MyRoot(a, b, c, p1, p2);
 	if (res == 1) {
 		std::cout << p1 << std::endl << p2 << std::endl;
 	}
 	else if (res == 0) {
 		std::cout << p1 << std::endl;
 	}
-	else std::cout << "Sorry, roots dosen't find";*/
+	else std::cout << "sorry, roots dosen't find";*/
 
 
 	//File Input/Output
 	FileIO file;
-	file.WriteInFile("testFile.txt", "Test222");
-	std::cout << file.ReadFromFile("testFile.txt");
+	//file.WriteInFile("testFile.txt", "Test222");
+	//std::cout << file.ReadFromFile("testFile.txt");
 
 
 }
